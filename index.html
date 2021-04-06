@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT || Video</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="ait-logo">
+        <h1>AHMEDABAD INSTITUTE OF TECHNOLOGY</h1>
+    </div>
+
+    <section>
+         <div class="cont">
+        <div class="heading">
+            <h3>Video Effect</h3>
+        </div>
+        <div class="video-container">
+            
+            <div class="video">
+                <video src="video2.mp4"></video>
+            </div>
+            
+            <div class="video">
+                <video src="video3.mp4"></video>
+            </div>
+            <div class="video">
+                <video src="video1.mp4"></video>
+            </div>
+        </div>
+    </div>
+    </section>
+   
+
+   
+    <footer>
+        <p>Copyright ©2021 All rights reserved with by Ahmedabad Institute of Technology </p>
+        <br>
+    </footer>
+
+<script>
+    var video=document.querySelectorAll('video')
+    video.forEach(play=>play.addEventListener('click',()=>{
+play.classList.toggle('active');
+if(play.paused){
+    play.play();
+}
+else{
+    play.pause();
+    play.currentTime=0;
+}
+    }));
+</script>
+</body>
+
+</html>
